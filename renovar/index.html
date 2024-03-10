@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Renovação</title>
+  <style>
+    body {
+      background-color: #181818;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    img {
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 1px solid white;
+      border-radius: 10px;
+      color: black;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .btn-green {
+      background-color: #00FF00;
+    }
+
+    .floating-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px; /* Alterado para o lado esquerdo */
+      background-color: #00FF00;
+      color: black;
+      padding: 15px; /* Aumentado o tamanho */
+      border: 1px solid white;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 24px;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const pixKey = "fcb9b761-a374-4e36-a98b-b28f129e97c3";
+      const copyButton = document.querySelector('.btn');
+
+      copyButton.addEventListener('click', function() {
+        navigator.clipboard.writeText(pixKey).then(function() {
+          alert('Chave Pix copiada com sucesso!');
+        }).catch(function(err) {
+          console.error('Erro ao copiar a Chave Pix: ', err);
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Renovação</h1>
+  <p>Para renovar, faça o pagamento e envie o comprovante junto com seu nome de usuário</p>
+  <img src="https://i.imgur.com/4Qwg3nk.jpeg" alt="QR Code">
+  <button class="btn">Copiar Chave Aleatória</button>
+  <a href="HTTPS://t.me/LOCKEDX9" class="btn btn-green">Enviar Comprovante</a>
+  <a href="https://dt.fastlyv2.shop" class="floating-btn">&#127968;</a>
+</body>
+</html>
